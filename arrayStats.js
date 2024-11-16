@@ -14,8 +14,8 @@ const arrayStats = (arr)=>{
     }
 
     let average = sum / arr.length
-    let min = Math.min(arr)
-    let max = Math.max(arr)
+    let min = Math.min(...arr)
+    let max = Math.max(...arr)
 
     return({"sum":sum, "average":average, "min":min, "max":max})
 }
